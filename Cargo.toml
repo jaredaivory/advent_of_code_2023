@@ -2,3 +2,4 @@
 
 [workspace]
 members = ["solutions/*", "utils"]
+resolver = "2"
