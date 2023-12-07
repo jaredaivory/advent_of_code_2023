@@ -43,7 +43,6 @@ fn calibration_value(calibration: String) -> u32 {
     while i < n {
         if bytes[i] >= zero_bound && bytes[i] <= nine_bound {
             right = (bytes[i] - zero_bound) as u32;
-            println!("{}", right)
         }
         else {
             for (key, value) in &hashMap {
@@ -75,7 +74,7 @@ pub fn start() -> Result<(), Error> {
         }
     }
 
-    println!("\nAdvent Of Code - 2023 | Part 2: Calibration Sum = {}", calibration_value_sum);
+    println!("\n\n\nAdvent Of Code - 2023 | Day 01 | 'Trebuchet?!': Part 2 \n Answer: {}", calibration_value_sum);
 
     Ok(())
 }

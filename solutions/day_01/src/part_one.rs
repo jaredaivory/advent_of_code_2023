@@ -43,7 +43,7 @@ pub fn start() -> Result<(), Error> {
         }
     }
 
-    println!("\n\n\nAdvent Of Code - 2023 | Part 1: Calibration Sum = {}", calibration_value_sum);
+    println!("\n\n\nAdvent Of Code - 2023 | Day 01 | 'Trebuchet?!': Part 1 \n Answer: {}", calibration_value_sum);
 
     Ok(())
 }

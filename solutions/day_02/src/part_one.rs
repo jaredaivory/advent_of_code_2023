@@ -98,7 +98,7 @@ pub fn start() -> Result<(), Error> {
         }
     }
 
-    println!("\n\n\nAdvent Of Code - 2023 | Day 02 | Cube Conundrum: Part 1 \n Answer: {}", game_sum);
+    println!("\n\n\nAdvent Of Code - 2023 | Day 02 | 'Cube Conundrum': Part 1 \n Answer: {}", game_sum);
     Ok(())
 }
 
