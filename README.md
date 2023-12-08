@@ -1,5 +1,5 @@
 # Advent Of Code 2023
-As I learn how to use the rust language, this repository is a collection of the advent of code challenged of 2023.
+As I learn how to use the rust language, this repository stands as a collection to hold my solutions for advent of code 2023 challenges.
 
 
 |    Advent Day        |     Challenge Solution                 | Part 1 | Part 2 |
