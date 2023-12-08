@@ -1,4 +1,4 @@
-# Advent Of Code 2023
+# 🎄 Advent Of Code 2023
 As I learn how to use the rust language, this repository stands as a collection to hold my solutions for advent of code 2023 challenges.
 
 
