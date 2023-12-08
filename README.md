@@ -30,15 +30,15 @@ As I learn how to use the rust language, this repository is a collection of the 
 | [25][25]      |  [...](/solutions/day_25/)    |  🔲   |  🔲  |
 
 
-[01]: https://adventofcode.com/2023/day/01
-[02]: https://adventofcode.com/2023/day/02
-[03]: https://adventofcode.com/2023/day/03
-[04]: https://adventofcode.com/2023/day/04
-[05]: https://adventofcode.com/2023/day/05
-[06]: https://adventofcode.com/2023/day/06
-[07]: https://adventofcode.com/2023/day/07
-[08]: https://adventofcode.com/2023/day/08
-[09]: https://adventofcode.com/2023/day/09
+[01]: https://adventofcode.com/2023/day/1
+[02]: https://adventofcode.com/2023/day/2
+[03]: https://adventofcode.com/2023/day/3
+[04]: https://adventofcode.com/2023/day/4
+[05]: https://adventofcode.com/2023/day/5
+[06]: https://adventofcode.com/2023/day/6
+[07]: https://adventofcode.com/2023/day/7
+[08]: https://adventofcode.com/2023/day/8
+[09]: https://adventofcode.com/2023/day/9
 [10]: https://adventofcode.com/2023/day/10
 [11]: https://adventofcode.com/2023/day/11
 [12]: https://adventofcode.com/2023/day/12
