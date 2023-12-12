@@ -8,18 +8,19 @@ As I learn how to use the rust language, this repository stands as a collection 
 | [02][02]      | 🧊 [Cube Conundrum](/solutions/day_02/)  🧊  |  ✅   |  ✅  |
 | [03][03]      | ⚙️ [Gear Ratios](/solutions/day_03/) ⚙️   |  🔲  |  🔲  |
 | [04][04]      | 🏷️ [Scratchcards](/solutions/day_04/) 🏷️   |  ✅   |  🔲  |
-| [05][05]      |  [...](/solutions/day_05/)    |  🔲   |  🔲  |
-| [06][06]      |  [...](/solutions/day_06/)    |  🔲   |  🔲  |
-| [08][08]      |  [...](/solutions/day_07/)    |  🔲   |  🔲  |
-| [09][09]      |  [...](/solutions/day_08/)    |  🔲   |  🔲  |
-| [10][10]      |  [...](/solutions/day_09/)    |  🔲   |  🔲  |
-| [11][11]      |  [...](/solutions/day_10/)    |  🔲   |  🔲  |
-| [12][12]      |  [...](/solutions/day_11/)    |  🔲   |  🔲  |
-| [13][13]      |  [...](/solutions/day_12/)    |  🔲   |  🔲  |
-| [14][14]      |  [...](/solutions/day_13/)    |  🔲   |  🔲  |
-| [15][15]      |  [...](/solutions/day_14/)    |  🔲   |  🔲  |
-| [16][16]      |  [...](/solutions/day_15/)    |  🔲   |  🔲  |
-| [17][17]      |  [...](/solutions/day_16/)    |  🔲   |  🔲  |
+| [05][05]      |  [If You Give A Seed A Fertilizer](/solutions/day_05/)    |  ✅   |  🔲  |
+| [06][06]      |  [Wait For It](/solutions/day_06/)    |  🔲   |  🔲  |
+| [07][07]      |  [Camel Cards](/solutions/day_07/)    |  🔲   |  🔲  |
+| [08][08]      |  [Haunted Wasteland](/solutions/day_08/)    |  🔲   |  🔲  |
+| [09][09]      |  [Mirage Maintenance](/solutions/day_09/)    |  🔲   |  🔲  |
+| [10][10]      |  [Pipe Maze](/solutions/day_010/)    |  🔲   |  🔲  |
+| [11][11]      |  [Cosmic Expansion](/solutions/day_11/)    |  🔲   |  🔲  |
+| [12][12]      |  [Hot Springs](/solutions/day_12/)    |  🔲   |  🔲  |
+| [13][13]      |  [...](/solutions/day_13/)    |  🔲   |  🔲  |
+| [14][14]      |  [...](/solutions/day_14/)    |  🔲   |  🔲  |
+| [15][15]      |  [...](/solutions/day_15/)    |  🔲   |  🔲  |
+| [16][16]      |  [...](/solutions/day_16/)    |  🔲   |  🔲  |
+| [17][17]      |  [...](/solutions/day_17/)    |  🔲   |  🔲  |
 | [18][18]      |  [...](/solutions/day_18/)    |  🔲   |  🔲  |
 | [19][19]      |  [...](/solutions/day_19/)    |  🔲   |  🔲  |
 | [20][20]      |  [...](/solutions/day_20/)    |  🔲   |  🔲  |
