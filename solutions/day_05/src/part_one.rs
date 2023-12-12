@@ -7,8 +7,9 @@ pub fn start() -> Result<(), Error> {
 #[cfg(test)]
 mod tests {
     use test_case::test_case;
+    use adventofcode_2023day_05::solution;
 
-    const SEEDS: &str  = "79 14 55 13";
+    const SEEDS: [u32; 4]  = [79, 14,55,13];
     const MAP_SEED_SOIL: &str =  
     "seed-to-soil map:
     50 98 2
@@ -49,7 +50,28 @@ mod tests {
     56 93 4";
 
     #[test_case(MAP_SEED_SOIL)]
-    fn create_map(map_string: &str){
-        
+    #[test_case(MAP_SOIL_FERTILIZER)]
+    #[test_case(MAP_FERTILIZER_WATER)]
+    #[test_case(MAP_WATER_LIGHT)]
+    #[test_case(MAP_LIGHT_TEMP)]
+    #[test_case(MAP_TEMP_HUMIDITY)]
+    #[test_case(MAP_HUMIDITY_LOCATION)]
+    fn test_create_range_map(map_string: &str){
+        println!("{:?}",solution::MyRangeMap::from(map_string))
+    }
+
+    #[test_case(79 => 81)]
+    #[test_case(14 => 14)]
+    #[test_case(55 => 57)]
+    #[test_case(13 => 13)]
+    fn test_seed_mapping(seed: u32) -> u32 {
+        let mapping: solution::MyRangeMap = solution::MyRangeMap::from(MAP_SEED_SOIL);
+        println!("{:?}", mapping);
+        let res = match mapping.rangemap.get_key_value(&seed) {
+            Some((range, value)) => seed - range.start + value,
+            None => seed
+        };
+
+        res
     }
 }
