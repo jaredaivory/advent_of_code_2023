@@ -1,4 +1,4 @@
 mod part_one;
 fn main() {
-    println!("Hello, world!");
+    let _ = part_one::start();
 }

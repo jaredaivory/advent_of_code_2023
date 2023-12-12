@@ -1,6 +1,16 @@
-use std::fmt::Error;
+use std::{fmt::Error, io::Read};
+
+use adventofcode_2023day_05::solution::Solution;
+use utils::file::read_file;
 
 pub fn start() -> Result<(), Error> {
+    let mut reader = read_file("solutions/day_05/input.txt").expect("Err");
+    let mut input_string = String::new();
+
+    reader.read_to_string(&mut input_string).expect("Failed to read input file");
+
+    let solution =  Solution::create(&input_string);
+    println!("{:?}", solution.solve());
     Ok(())
 }
 
@@ -9,7 +19,7 @@ mod tests {
     use test_case::test_case;
     use adventofcode_2023day_05::solution;
 
-    const SEEDS: [u32; 4]  = [79, 14,55,13];
+    const SEEDS: &str= "seeds: 79 14 55 13";
     const MAP_SEED_SOIL: &str =  
     "seed-to-soil map:
     50 98 2
@@ -60,18 +70,24 @@ mod tests {
         println!("{:?}",solution::MyRangeMap::from(map_string))
     }
 
+    // MAP_SEED_SOIL, MAP_FERTILIZER_WATER, MAP_WATER_LIGHT, MAP_LIGHT_TEMP, MAP_TEMP_HUMIDITY, MAP_HUMIDITY_LOCATION
+    #[test_case([SEEDS, MAP_SEED_SOIL, MAP_SOIL_FERTILIZER, MAP_FERTILIZER_WATER, MAP_WATER_LIGHT, MAP_LIGHT_TEMP, MAP_TEMP_HUMIDITY, MAP_HUMIDITY_LOCATION].join("\n\n"), 79 => 82)]
+    #[test_case([SEEDS, MAP_SEED_SOIL, MAP_SOIL_FERTILIZER, MAP_FERTILIZER_WATER, MAP_WATER_LIGHT, MAP_LIGHT_TEMP, MAP_TEMP_HUMIDITY, MAP_HUMIDITY_LOCATION].join("\n\n"), 14 => 43)]
+
+    #[test_case([SEEDS, MAP_SEED_SOIL, MAP_SOIL_FERTILIZER, MAP_FERTILIZER_WATER, MAP_WATER_LIGHT, MAP_LIGHT_TEMP, MAP_TEMP_HUMIDITY, MAP_HUMIDITY_LOCATION].join("\n\n"), 55 => 86)]
+    #[test_case([SEEDS, MAP_SEED_SOIL, MAP_SOIL_FERTILIZER, MAP_FERTILIZER_WATER, MAP_WATER_LIGHT, MAP_LIGHT_TEMP, MAP_TEMP_HUMIDITY, MAP_HUMIDITY_LOCATION].join("\n\n"), 13 => 35)]
+
+    fn test_solution(map_string: String, seed: u128)  -> u128{
+        let s = solution::Solution::create(&map_string);
+        s.get_value(seed).unwrap()
+    }
+
     #[test_case(79 => 81)]
     #[test_case(14 => 14)]
     #[test_case(55 => 57)]
     #[test_case(13 => 13)]
-    fn test_seed_mapping(seed: u32) -> u32 {
+    fn test_seed_mapping(seed: u128) -> u128 {
         let mapping: solution::MyRangeMap = solution::MyRangeMap::from(MAP_SEED_SOIL);
-        println!("{:?}", mapping);
-        let res = match mapping.rangemap.get_key_value(&seed) {
-            Some((range, value)) => seed - range.start + value,
-            None => seed
-        };
-
-        res
+        mapping.get(seed)
     }
 }
