@@ -1,7 +1,28 @@
+use std::ops::Deref;
 use std::{fmt::Error, io::Read};
 
 use adventofcode_2023day_05::solution::Solution;
+use adventofcode_2023day_05::Solve;
 use utils::file::read_file;
+
+struct PartOne(Solution);
+
+impl Deref for PartOne {
+    type Target = Solution;
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+
+impl Solve for PartOne {
+    fn solve(&self) -> u128 {
+        let mut min: u128 = u128::MAX;
+        for seed in &self.seeds {
+            min = std::cmp::min(self.get_value(*seed).unwrap(), min);
+        }
+        min
+    }
+}
 
 pub fn start() -> Result<(), Error> {
     let mut reader = read_file("solutions/day_05/input.txt").expect("Err");
@@ -9,7 +30,7 @@ pub fn start() -> Result<(), Error> {
 
     reader.read_to_string(&mut input_string).expect("Failed to read input file");
 
-    let solution =  Solution::create(&input_string);
+    let solution =  PartOne(Solution::create(&input_string));
     println!("{:?}", solution.solve());
     Ok(())
 }

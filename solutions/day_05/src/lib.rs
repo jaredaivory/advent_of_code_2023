@@ -1,14 +1,18 @@
 
-pub mod solution {
-    use std::{collections::HashMap};
-    use std::error::Error;
 
+pub trait Solve {
+    fn solve(&self) -> u128;
+}
+
+pub mod solution {
+    use std::collections::HashMap;
     use rangemap::RangeMap;
+
 
     #[derive(Debug)]
     pub struct Solution {
-        seeds: Vec<u128>,
-        collection: HashMap<String, MyRangeMap>
+        pub seeds: Vec<u128>,
+        pub collection: HashMap<String, MyRangeMap>
     }
 
     impl Solution {
@@ -23,14 +27,6 @@ pub mod solution {
                 key_type = rangemap.value.to_string();
             }
             Ok(value)
-        }
-
-        pub fn solve(&self) -> u128 {
-            let mut min: u128 = u128::MAX;
-            for seed in &self.seeds {
-                min = std::cmp::min(self.get_value(*seed).unwrap(), min);
-            }
-            min
         }
 
 
@@ -57,7 +53,10 @@ pub mod solution {
                 collection
             }
         }
+
+
     }
+
 
     #[derive(Debug)]
     pub struct MyRangeMap {
