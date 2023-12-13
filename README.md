@@ -8,7 +8,7 @@ As I learn how to use the rust language, this repository stands as a collection 
 | [02][02]      | 🧊 [Cube Conundrum](/solutions/day_02/)  🧊  |  ✅   |  ✅  |
 | [03][03]      | ⚙️ [Gear Ratios](/solutions/day_03/) ⚙️   |  🔲  |  🔲  |
 | [04][04]      | 🏷️ [Scratchcards](/solutions/day_04/) 🏷️   |  ✅   |  🔲  |
-| [05][05]      |  [If You Give A Seed A Fertilizer](/solutions/day_05/)    |  ✅   |  🔲  |
+| [05][05]      | 🌱 [If You Give A Seed A Fertilizer](/solutions/day_05/) 🌱    |  ✅   |  🔲  |
 | [06][06]      |  [Wait For It](/solutions/day_06/)    |  🔲   |  🔲  |
 | [07][07]      |  [Camel Cards](/solutions/day_07/)    |  🔲   |  🔲  |
 | [08][08]      |  [Haunted Wasteland](/solutions/day_08/)    |  🔲   |  🔲  |
