@@ -98,9 +98,15 @@ The gardener and his team want to get started as soon as possible, so they'd lik
 So, the lowest location number in this example is 35.
 
 What is the lowest location number that corresponds to any of the initial seed numbers?
-<summary>
-<b>Answer</b>
-340994526
+
+<details>
+        <summary>
+                <b>Answer</b>
+        </summary>
+        340994526
+</details>
+
+
 </summary>
 
 Everyone will starve if you only plant such a small number of seeds. Re-reading the almanac, it looks like the seeds: line actually describes ranges of seed numbers.
